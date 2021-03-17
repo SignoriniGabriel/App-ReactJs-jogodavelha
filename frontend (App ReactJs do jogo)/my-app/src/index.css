@@ -1,0 +1,183 @@
+body {
+    font: 14px "Century Gothic", Futura, sans-serif;
+    margin: 20px;
+    background-image: url("fundo.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+  } 
+
+
+  ol, ul {
+    padding-left: 30px;
+  }
+  
+  .board-row:after {
+    clear: both;
+    content: "";
+    display: table;
+  }
+  
+  .status {
+    margin-bottom: 10px;
+  }
+  
+  .square {
+    background-color: rgba(0,0,0,0.5);
+    background-size: cover;
+    border: 1px solid #fff;
+    float: left;
+    font-size: 50px;
+    font-weight: bold;
+    line-height: 40px;
+    height: 80px;
+    margin-right: -1px;
+    margin-top: -1px;
+    padding: 0;
+    text-align: center;
+    width: 80px;
+  }
+  .square:hover {
+    background-color: rgba(0,0,0,0.1);
+    border: 1px solid #aaa;
+    box-shadow: 3px 5px 8px black;
+    float: left;
+    font-weight: bold;
+    line-height: 34px;
+    height: 80px;
+    margin-right: -1px;
+    margin-top: -1px;
+    padding: 0;
+    text-align: center;
+    width: 80px;
+    cursor: pointer;
+  }
+  
+  .square:focus {
+    outline: none;
+  }
+  
+  .kbd-navigation .square:focus {
+    background: #ddd;
+  }
+  
+  .game {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .game-info {
+    position: absolute;
+    left: 450px;
+    top: 320px;
+    box-shadow: 4px 5px 5px #000;
+  }
+
+  .statusposition {
+    position: absolute;
+    left: -350px;
+    top: 30px;
+    font-size: 30px;
+    color:#fff;
+    text-shadow: 2px 2px #363636;
+    font-weight: bold;
+  }
+
+  .positionmove{
+    position: absolute;
+    left: 800px;
+  }
+
+  .button{
+  background-color: #363636; 
+  border: none;
+  color: white;
+  width: 180px;
+  height: 50px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  box-shadow: 3px 1px 3px black;
+  }
+  .button:hover{
+    background-color: #4F4F4F; 
+    border: none;
+    color: white;
+    width: 180px;
+    height: 50px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 4px 2px 4px black;
+  }
+  .button:focus { outline: none; }
+
+
+  .listbutton{
+    padding-bottom: 5px;
+  }
+  
+  .table {
+    position: absolute;
+    left: 1100px;
+    margin: 0px auto;
+    background-color: #363636;
+    padding: 15px;
+    border-radius: 1px;
+    box-shadow: 2px 2px 5px black;
+    color: white;
+    
+  }
+
+  .option{
+    padding: 30px 75px 10px;
+    position: relative;
+    background: #363636;
+    border-top: 5px solid #fff;
+  }
+
+  .option h2{
+    color: #fff;
+    font-size: 30px;
+    padding: 10px 0;
+    margin-left: 10px;
+    display: inline-block;
+    border-bottom: 4px solid #fff;
+  }
+
+  .option label{
+    position: relative;
+    display: block;
+    margin: 40px 0;
+    color: #fff;
+    font-size: 24px;
+    cursor: pointer;  
+  }
+
+  .options input[type="radio"]{
+    -webkit-appearance: none;
+  }
+
+  .option .i{
+    position: absolute;
+    top: 0;
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    border: 2px solid #fff;
+  }
+
+  .option input[type="radio"]:checked ~ i{
+    border-top: none;
+    border-right: none;
+    height: 15px;
+    width: 15px;
+    transform: rotate(-45deg);
+  }
+
+  .board-row{
+    display: flex;
+  }
